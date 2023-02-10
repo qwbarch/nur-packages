@@ -12,7 +12,8 @@ stdenv.mkDerivation rec {
   phases = [ "installPhase" ];
   installPhase = ''
     mkdir -p $out/bin
-    cp $src $out/bin/arcanists2
+    cp -a $src/. $out/bin
+    mv $out/bin/"Arcanists 2.x86_64" $out/bin/arcanists2
     chmod +x $out/bin/arcanists2
   '';
 }
