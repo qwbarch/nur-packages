@@ -1,4 +1,4 @@
 { pkgs ? import <nixpkgs> { } }:
 {
-  arcanists2 = pkgs.callPackage ./arcanists { };
+  arcanists2 = pkgs.callPackage ./arcanists2 { };
 }
