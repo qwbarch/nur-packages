@@ -1,7 +1,6 @@
 { pkgs, lib, stdenv, autoPatchelfHook, makeWrapper }:
 
 let
-  name = "arcanists2";
   version = "21254e_1fda44cb280f4146a4e471ac46995c81";
   description = "Turn-based multiplayer strategy game";
   desktopEntry = ''
@@ -11,7 +10,7 @@ let
     Name=Arcanists 2
     GenericName=${description}
     Icon=/share/applications/arcanists2.png
-    Exec=${name}
+    Exec=arcanists2
     Terminal=false
     Categories=Game
   '';
