@@ -49,5 +49,6 @@ stdenv.mkDerivation
     inherit description;
     homepage = "https://www.arcanists2.com";
     platforms = platforms.linux;
+    license = licenses.unfree;
   };
 }
