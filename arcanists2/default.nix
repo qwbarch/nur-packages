@@ -17,8 +17,9 @@ let
 in
 stdenv.mkDerivation
 {
-  inherit name version;
+  inherit version;
 
+  name = "arcanist2";
   src = pkgs.fetchzip {
     url = "https://400c3bfb-51ec-4397-aa27-28b8f8c30ca3.filesusr.com/archives/${version}.zip?dn=LinuxArcanists%202.zip";
     sha256 = "b73shcHwpYxT1nHi3SGiGFa1LZXXkV6egV3tzbarQYQ=";
